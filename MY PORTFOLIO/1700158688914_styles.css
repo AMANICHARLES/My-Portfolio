@@ -1,0 +1,101 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #3e3d3d; /* Faint background color */
+  }
+  
+  /* Page styles */
+  .page {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Box styles */
+  .box {
+  
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  /* Page 1 styles */
+  #page1 {
+    background: linear-gradient(135deg, #3494e6, #ec6ead);
+    color: #fff;
+  }
+  
+  /* Page 2 styles */
+  #page2 {
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    color: #fff;
+  }
+  
+  
+  /* Page 3 styles */
+  #page3 {
+    background: linear-gradient(135deg, #16a085, #f4d03f);
+    color: #fff;
+  }
+  
+  h1, h2, h3 {
+    margin-bottom: 10px;
+    color: #333; /* Cool text color */
+  }
+  
+  /* Skill design ideas */
+  .skill-category {
+    border: 2px solid #fff; /* White border */
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  
+  .skill-category:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Contact info styles */
+  .contact-info p {
+    margin: 10px 0;
+  }
+  
+  /* Gradient background for the body */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: linear-gradient(135deg, #3494e6, #ec6ead, #74ebd5, #acb6e5, 
+  
+  #16a085, #f4d03f);
+    background-size: 300% 300%;
+    animation: gradientAnimation 10s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
